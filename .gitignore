@@ -1,6 +1,16 @@
+cat <<EOF > .gitignore
+# Terraform
 .terraform/
 *.tfstate
 *.tfstate.*
-*.tfplan
 .terraform.lock.hcl
+crash.log
+*.tfplan
+
+# AWS keys, credentials
 *.pem
+EOF
+
+
+
+
